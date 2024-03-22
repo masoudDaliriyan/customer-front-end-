@@ -2,32 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.cdnfonts.com/css/iranian-sans');
+
+
+
+
+body{
+    font-family: Iranian Sans;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.coffee-title{
+    font-size: 37px;
+    color: white;
+    margin: auto;
+    display: block;
+    text-align: center;
+    /*padding-bottom: 20px;*/
+}
+.create-button{
+    margin: auto;
+    display: block;
+    padding: 15px 0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.products{
+    
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.navbar{
+    height: 70px;
+    background: powderblue;
+}
+.product {
+   padding-bottom: 30px; 
+}
+.product img {
+    margin: auto;
+    max-width: 60%;
+    max-height: 60%;
+    padding: 30px 0 0 0  ;
+}
+.logo{
+    width: 50px;
+}
+.menu{
+    width: 45px;
+}
+html,body,#__next{
+    height: 100%;
+}
+.content{
+    
+   padding: 0 40px ;
+}
+
+.customize-text{
+    font-size: 30px;
+}
+
+.basket { 
+    
+}
+
+.basket img  { 
+    height: 50px;
+}
+.basket-item  img{ 
+}
+.basket-item__image{
+    width: 80px;
 }
